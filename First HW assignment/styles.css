@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-size:1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 1rem;
+
+    }
+}
+
+/* ----HEADER----*/
+
+@media (max-width: 600px) {
+    header {
+
+
+    }
+}
+
+.banner {
+    background-image: url(http://static1.squarespace.com/static/5e9e6fa90f8d724ee6f6ebec/t/5e9eaf5df1cdfa38f241f565/1587457893588/2020-03-31-14.50.02-2.jpg?format=1800w);
+    background-repeat: repeat-y;
+    background-position-x: 150px;
+    background-position-y: 785px;
+    display: block;
+    background-color: black;
+    height: 600px;
+    width: auto;
+    background-position:center center;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+ 
+}
+@media (max-width: 1400px){
+    .banner {
+        background-image: url(http://static1.squarespace.com/static/5e9e6fa90f8d724ee6f6ebec/t/5e9eaf5df1cdfa38f241f565/1587457893588/2020-03-31-14.50.02-2.jpg?format=600w);
+        background-repeat: repeat-y;
+        background-position-x: 150px;
+        background-position-y: 785px;
+        display: block;
+        background-color: black;
+        height: 500px;
+        width: auto;
+        background-position:center center;
+    }
+}
+
+@media (max-width: 800px){
+    .banner {
+    background-image: url(http://static1.squarespace.com/static/5e9e6fa90f8d724ee6f6ebec/t/5e9eaf5df1cdfa38f241f565/1587457893588/2020-03-31-14.50.02-2.jpg?format=500w);
+    background-repeat: none;
+    background-position-x: 150px;
+    background-position-y: 785px;
+    display: block;
+    background-color: black;
+    height: 300px;
+    background-position:center center;
+    
+}
+}
+
+/*---NAVIGATION---*/
+nav {
+    background-color: black;
+    position: sticky;
+    top: 0px;
+}
+
+@media (max-width: 800px) {
+    nav a{
+        max-width: 100%;
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    margin: auto 15%;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(96, 97, 92, 0.329);
+    position: sticky;
+    top: 0px;
+  }
+
+  @media (max-width: 800px) {
+    nav ul {
+        margin: 0;
+    }
+}
+  
+  li {
+    float: center;
+    
+  }
+  
+  @media (min-width: 800px) {
+    li {
+        float: right;
+    }
+}
+
+  li a {
+    font-size:3vh;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  
+li a:hover {
+    background-color: rgb(119, 119, 118);
+  }
+  
+.active {
+    background-color: #ffc400;
+  }
+  
+
+    
+
+/*---CONTENT OR FLEX CONTAINERS---*/
+
+main {
+    margin: auto 15%;
+}
+@media (max-width: 800px) {
+    main {
+        margin: 0;
+    }
+}
+
+
+
+main h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+    margin: 5vh auto;
+    background-color:#FFC900;
+    padding:40px;
+}
+@media (max-width: 800px) {
+    .title h1{
+        font-size: 3rem;
+        margin-top: 0;
+        margin-bottom: 5vh;
+        width: 100%;
+        
+    }
+}
+
+
+.flexboxcontainer {
+    justify-content: space-between;
+    display: flex;
+}
+
+@media (man-width: 800px) {
+    .title {
+        flex-direction: column;
+        background-color: blue;
+    }
+}
+
+.colA {
+    max-width: 70%;
+}
+.colA img {
+    max-width: 95%;
+    height: auto;
+}
+
+.colB{
+    max-width: 30%;
+    height: auto;
+} 
+
+p {
+    line-height: 1.5;
+}
+@media (min-width: 600px) {
+
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+ 
+  @media (min-width: 600px) {
+
+}
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media (min-width: 600px) {
+
+}
+  .margin15 {
+      margin: auto 15%;
+  }
+  @media (min-width: 600px) {
+
+}
+  .sidecol {
+      padding: 0 3rem;
+  }
+
+  @media (min-width: 600px) {
+
+}
+ 
+h4 {
+      font-size: 2rem;
+  }
+
+  @media (min-width: 600px) {
+
+}
+ 
+ h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    margin: 5vh auto;
+}
+
+@media (min-width: 600px) {
+
+}
+
+/*FOOTER*/
+footer{
+    background-color: black;
+    color:white;
+    padding: 5%;
+}
+
+@media (min-width: 600px) {
+
+}
+
+footer h3{
+    color:#FFC900;
+}
+
+@media (min-width: 600px) {
+
+}
+
+footer.contacts {
+    color:white;
+}
+
+@media (min-width: 600px) {
+
+}
+
+.contacts {
+    line-height: 1.75;
+}
+
+@media (min-width: 600px) {
+
+}
+
+.footcontainer {
+    display: flex;
+    justify-content: space-around;
+    margin: auto 15%;
+}
+
+@media (min-width: 600px) {
+
+}
+
+.socialmedianav a{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 600px) {
+
+}
+
+.socialmedianav img {
+    width: 3rem;
+}
+
+@media (min-width: 600px) {
+
+}
