@@ -157,8 +157,8 @@ main h1 {
         font-size: 3rem;
         margin-top: 0;
         margin-bottom: 5vh;
-        width: 100%;
-        
+        border-top: 2px solid black;
+        border-bottom: 3px solid black;
     }
 }
 
