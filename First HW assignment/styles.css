@@ -2,7 +2,6 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    overflow-x: hidden;
 }
 
 body {
@@ -82,7 +81,7 @@ nav {
     }
 }
 
-nav ul {
+ul {
     list-style-type: none;
     margin: auto 15%;
     padding: 0;

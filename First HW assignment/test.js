@@ -1,18 +1,13 @@
-let secretMessage = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '-2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'];
-
-secretMessage.pop();
-console.log(secretMessage.length);
-
-secretMessage.push('to','Program');
-
-secretMessage[7] = 'right';
-
-secretMessage.shift();
-
-secretMessage.unshift('Programming');
-
-console.log(secretMessage);
+function test() {
+    console.log('Hello World');
+};
 
 
+let name = 'Khalil',
+    age = 53;
 
-//const alexa =() => {}
+function getUser(name, age) {
+    let welcom = 'Hello, ' + name + '. Whey are you ' + age + 'years old';
+};
+
+getUser
