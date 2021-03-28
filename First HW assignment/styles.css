@@ -20,26 +20,16 @@ body {
     }
 }
 
-/* ----HEADER----*/
-
-/* @media (max-width: 600px) {
-    header {
-            Don't know yet.
-    }
-} */
-
+/* Header-Banner */
 .banner {
     background-image: url(http://static1.squarespace.com/static/5e9e6fa90f8d724ee6f6ebec/t/5e9eaf5df1cdfa38f241f565/1587457893588/2020-03-31-14.50.02-2.jpg?format=1800w);
     background-repeat: repeat-y;
     background-position-x: 150px;
     background-position-y: 785px;
-    display: block;
     background-color: black;
     height: 600px;
     width: auto;
     background-position:center center;
-  
- 
 }
 @media (max-width: 1400px){
     .banner {
@@ -47,7 +37,6 @@ body {
         background-repeat: repeat-y;
         background-position-x: 150px;
         background-position-y: 785px;
-        display: block;
         background-color: black;
         height: 500px;
         width: auto;
@@ -69,7 +58,8 @@ body {
 }
 }
 
-/*---NAVIGATION---*/
+/*-------------NAVIGATION-------------*/
+
 .sticky {
     background-color: black;
     position: sticky;
@@ -100,14 +90,19 @@ ul {
 }
   
   li {
-    float: center;
+    /* float: center; */
   
     
   }
   
   @media (min-width: 800px) {
-    li {
-        float: right;
+    .flexnav {
+        /* float: right; */
+        display: flex;
+        justify-content: flex-end;
+        
+        
+
     }
 }
 
@@ -132,12 +127,10 @@ li a:hover {
 
     
 
-/*---CONTENT OR FLEX CONTAINERS---*/
+/*------------CONTENT OR FLEX CONTAINERS------------*/
 
 main {
     margin: auto 15%;
- 
-    
 }
 
 @media (max-width: 800px) {
@@ -184,17 +177,17 @@ img {
     }
 }
 
-.colA {
+.col1A {
     max-width: 70%;
-    overflow-x: hidden;
+
 }
-.colA img {
+.col1A img {
     max-width: 95%;
     height: auto;
     overflow-x: hidden;
 }
 
-.colB{
+.col1B{
     max-width: 30%;
     height: auto;
 
@@ -236,10 +229,9 @@ p {
   @media (min-width: 600px) {
 
 }
-  .sidecol {
+  /* .sidecol {
       padding: 0 3rem;
- 
-  }
+  } */
 
   @media (min-width: 600px) {
 
