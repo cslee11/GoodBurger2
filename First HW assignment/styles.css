@@ -70,7 +70,7 @@ body {
 }
 
 /*---NAVIGATION---*/
-nav {
+.sticky {
     background-color: black;
     position: sticky;
     top: 0px;

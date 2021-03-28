@@ -16,10 +16,14 @@
     <div class="banner">
     </div>
     <div>
+      <!--  The div here used to contain the sticky-nav, but apparently
+      a sticky child-element will only work inside of the parent
+      element container. So I placed it out side the header as
+      a direct child-element of the body.  -->
     </div>  
   </header>
 
-  <nav>
+  <nav class="sticky">
     <ul>
       <li><a href="">Menu</a></li>
       <li><a href="about.html">About</a></li>
@@ -77,21 +81,25 @@
 <!--FOOTER-->
   <footer>
     <div class="footcontainer">
+
       <div class="contacts col1" >
         <h5>Contacts</h5>
-        <h6>Phone: 1-800-fak-enum</h6>
+        <h6>Phone: 1-800-333-4100</h6>
         <h6>Email: Forpractice@goodburger.com</h6>
         <h6>Location: 4532 84th Street <br>Milwaukee, WI 53123</h6>
       </div>
+
       <div class= "newsl col2">
         <h3>Subscribe To Newsletter</h3>
         <p style="padding-top:1.6rem 0; font-size:1.1rem"; >For Discounts, Coupons and Savings</p>
+
         <form style="padding:1rem 0";>
           <label for="email">Enter your email:</label>
           <input type='email' id='email' name='email' style="padding: .50rem;">
           <input type="submit" value="Submit" style="padding: .50rem;"> 
         </form>
       </div>
+      
       <div class='social col3'>
         <div class="socialmedianav">
           <a href=""><img src="img\yticon.webp"></a>
@@ -99,6 +107,7 @@
           <a href=""><img src="img\1-Fb.webp"></a>
         </div>
       </div>
+
     </div>
   </footer>
     
