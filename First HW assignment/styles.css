@@ -22,12 +22,11 @@ body {
 
 /* ----HEADER----*/
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     header {
-
-
+            Don't know yet.
     }
-}
+} */
 
 .banner {
     background-image: url(http://static1.squarespace.com/static/5e9e6fa90f8d724ee6f6ebec/t/5e9eaf5df1cdfa38f241f565/1587457893588/2020-03-31-14.50.02-2.jpg?format=1800w);
