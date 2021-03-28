@@ -2,9 +2,13 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+    /* overflow-x: hidden; */
+    /* Over flow is what was interferering with the stickynav*/
+    
 }
 
 body {
+    overflow-x: hidden; /* you can instead put overflow on the body*/
     font-size:1.5rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
@@ -35,9 +39,7 @@ body {
     height: 600px;
     width: auto;
     background-position:center center;
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
+  
  
 }
 @media (max-width: 1400px){
@@ -73,6 +75,7 @@ nav {
     background-color: black;
     position: sticky;
     top: 0px;
+
 }
 
 @media (max-width: 800px) {
@@ -86,7 +89,7 @@ ul {
     margin: auto 15%;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(96, 97, 92, 0.329);
+    background-color: rgba(1, 2, 0, 0);
     position: sticky;
     top: 0px;
   }
@@ -99,6 +102,7 @@ ul {
   
   li {
     float: center;
+  
     
   }
   
@@ -133,7 +137,10 @@ li a:hover {
 
 main {
     margin: auto 15%;
+ 
+    
 }
+
 @media (max-width: 800px) {
     main {
         margin: 0;
@@ -161,10 +168,14 @@ main h1 {
     }
 }
 
+img {
+    overflow-x: hidden; /*Without this the site looks ugly don't know why.*/
+}
 
 .flexboxcontainer {
     justify-content: space-between;
     display: flex;
+    
 }
 
 @media (man-width: 800px) {
@@ -176,19 +187,23 @@ main h1 {
 
 .colA {
     max-width: 70%;
+    overflow-x: hidden;
 }
 .colA img {
     max-width: 95%;
     height: auto;
+    overflow-x: hidden;
 }
 
 .colB{
     max-width: 30%;
     height: auto;
+
 } 
 
 p {
     line-height: 1.5;
+  
 }
 @media (min-width: 600px) {
 
@@ -198,6 +213,7 @@ p {
     width: 50%;
     padding: 10px;
     height: 300px; /* Should be removed. Only for demonstration */
+  
   }
  
   @media (min-width: 600px) {
@@ -208,6 +224,7 @@ p {
     content: "";
     display: table;
     clear: both;
+    
   }
 
   @media (min-width: 600px) {
@@ -215,12 +232,14 @@ p {
 }
   .margin15 {
       margin: auto 15%;
+      
   }
   @media (min-width: 600px) {
 
 }
   .sidecol {
       padding: 0 3rem;
+ 
   }
 
   @media (min-width: 600px) {
@@ -229,6 +248,7 @@ p {
  
 h4 {
       font-size: 2rem;
+ 
   }
 
   @media (min-width: 600px) {
@@ -241,6 +261,7 @@ h4 {
     font-weight: 900;
     text-align: center;
     margin: 5vh auto;
+
 }
 
 @media (min-width: 600px) {
@@ -252,6 +273,7 @@ footer{
     background-color: black;
     color:white;
     padding: 5%;
+
 }
 
 @media (min-width: 600px) {
@@ -260,6 +282,7 @@ footer{
 
 footer h3{
     color:#FFC900;
+   
 }
 
 @media (min-width: 600px) {
@@ -268,6 +291,7 @@ footer h3{
 
 footer.contacts {
     color:white;
+   
 }
 
 @media (min-width: 600px) {
@@ -276,6 +300,7 @@ footer.contacts {
 
 .contacts {
     line-height: 1.75;
+   
 }
 
 @media (min-width: 600px) {
@@ -286,6 +311,7 @@ footer.contacts {
     display: flex;
     justify-content: space-around;
     margin: auto 15%;
+   
 }
 
 @media (min-width: 600px) {
