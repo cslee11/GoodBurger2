@@ -101,8 +101,6 @@ ul {
         display: flex;
         justify-content: flex-end;
         
-        
-
     }
 }
 
@@ -167,15 +165,22 @@ img {
 .flexboxcontainer {
     justify-content: space-between;
     display: flex;
-    
 }
 
-@media (man-width: 800px) {
-    .title {
+@media (max-width: 1400px) {
+    .flexboxcontainer {
+        display: flex;
         flex-direction: column;
-        background-color: blue;
+        justify-items: center;
+        align-items: center; 
+    }
+    .flexboxcontainer .col1B {
+        width: 200%;
+        
     }
 }
+
+
 
 .col1A {
     max-width: 70%;
@@ -190,6 +195,7 @@ img {
 .col1B{
     max-width: 30%;
     height: auto;
+    overflow-x: hidden;
 
 } 
 
